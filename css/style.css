@@ -1,33 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "screens/login.css";
+@import "components/status-bar.css";
+@import "components/nav_bar.css";
+@import "components/screen-header.css";
+@import "screen.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "components/alt-screen-header.css";
+@import "components/icon-row.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "variable.css";
 
 body{
     font-family: 'Open Sans', sans-serif;
+    color: #2e363e;
+    height: 200vh;
 }
 
 .status-bar{
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
-.status-bar__column{
-    width: 33%;
+.main-screen{
+    padding: 0px var(--horizontal-space);
 }
 
-.status-bar__column:first-child span{
-    margin-right: 5px;
+.main-screen a{
+    text-decoration: none;
 }
 
-.status-bar__column:nth-child(2){
-    display: flex;
-    justify-content: center;
-}
-
-.status-bar__column:last-child{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.status-bar__column .fa-battery-full{
-    margin: 0px 5px;
+a{
+    color: inherit;
 }
