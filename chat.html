@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Settings - Kokoa Talk</title>
 </head>
-<body>
+<body id="chat-screen">
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -25,42 +25,60 @@
     <header class="alt-header">
         <div class="alt-header_column">
             <a href="more.html">
-                <i class="fa-solid fa-chevron-left fa-3x"></i>
+                <i class="fa-solid fa-chevron-left fa-2x"></i>
             </a>
         </div>
         <div class="alt-header_column">
-            <h1 class="alt-header-title">Settings</h1>
+            <h1 class="alt-header-title">똥규</h1>
         </div>
         <div class="alt-header_column">
-            <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            <span><i class="fa-solid fa-bars  fa-2x"></i></span>
         </div>
     </header>
 
-    <main class="main-screen">
-        <ul class="settings-list">
-            <li class="settings-setting">
-                <div class="settings-setting-column">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <span>Notice</span>
+    <main class="main-screen main-chat">
+        <div class="chat-timestamp">
+            Tuesday, June 30, 2020
+        </div>
+
+        <div class="message-row">
+            <img src="KakaoTalk_20220917_014934569.png">
+            <div class="message-row-content">
+                <span class="message-author">Sun</span>
+                <div class="message-info">
+                    <span class="message-bubble">Hi!</span>
+                    <span class="message-time">21:27</span>
                 </div>
-                <div class="settings-setting-column"></div>
-            </li>
-            <li class="settings-setting">
-                <div class="settings-setting-column">
-                    <i class="fa-solid fa-flask"></i>
-                    <span>Kokoa Lab</span>
+            </div>
+        </div>
+
+        <div class="message-row message-row-own">
+            <div class="message-row-content">
+                <div class="message-info">
+                    <span class="message-bubble">Hi nice to meet you!</span>
+                    <span class="message-time">21:27</span>
                 </div>
-                <div class="settings-setting-column"></div>
-            </li>
-            <li class="settings-setting">
-                <div class="settings-setting-column">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span>Version</span>
-                </div>
-                <div class="settings-setting-column">Lastest Version</div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </main>
+
+    <form class="reply">
+        <div class="reply-column">
+            <i class="fa-regular fa-square-plus fa-lg"></i>
+        </div>
+        <div class="reply-column">
+            <input type="text" placeholder="Write a message..."/>
+            <i class="fa-regular fa-face-smile-wink fa-lg"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <div id="no-mobile">
+        <span>Your screen is too big :(</span>
+    </div>
 
 
     <script src="https://kit.fontawesome.com/33b9d7fb9d.js" crossorigin="anonymous"></script>
